@@ -22,7 +22,7 @@ const Form = () => {
         break;
       case "email":
         if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(value))
-          error = "Please enter a valid email address.";
+          error = "Invalid email format";
         break;
       case "password":
         if (value.length < 6) error = "Password must be at least 6 characters.";
